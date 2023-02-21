@@ -1,0 +1,151 @@
+* {
+    font-weight: 200px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    background-color: #b8cde6;
+    padding: 1em 0;
+    margin-bottom: 1em;
+
+
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+
+
+}
+main {
+
+    display: flex;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.input-texto {
+    border: none;
+    }
+
+.mensajes {
+    padding: 50px;
+    background-image: url("imagenes/muñeco.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+   
+    }
+
+.copiar {
+  position: flex center;
+  margin: 14px 10px 10px 25px;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0da05b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(94, 20, 20);
+  font-size: auto;
+
+}
+.copiar:hover {background-color: #2a4a6e}
+
+.copiar:active {
+  background-color: #38684c;
+  box-shadow: 0 5px rgb(38, 102, 78);
+  transform: translateY(4px);
+}
+.botones {
+  padding-bottom: 3%;
+}
+.encriptar {
+  padding: 15px 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4c66af;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: fit-content;
+  width: fit-content;
+
+}
+.encriptar:hover {background-color: #7993e7}
+
+.encriptar:active {
+  background-color: #0d2838;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.desencriptar {
+  padding: 15px 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #b93514;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: fit-content;
+  width: fit-content;
+}
+.desencriptar:hover {background-color: #c79817}
+
+.desencriptar:active {
+  background-color: #bb194f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+footer {
+  background-color: #304156;
+  padding: 1em 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: fit-content;
+}
+  
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+
+  main {
+    display: grid;
+
+  }
+  .mensajes {
+    align-items: center;
+
+  }
+}
+  @media only screen and (max-width: 650px) {
+
+    * {
+      font-size: 14px;
+    
+    }
+  }

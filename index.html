@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Alura -Responsive</title>
+    <link rel="shortcut icon" href="imagenes/home_FILL0_wght400_GRAD0_opsz48.png">
+
+</head>
+<body>
+    <header>
+        <img src="imagenes/logoalura.png" alt="Logo Alura Latam"></img>
+    </header>
+    <main>
+        <section id="principal">
+            <textarea class="input-texto" cols="40%" rows="6" placeholder="Ingrese el texto aqui.."></textarea>
+            <div id="div-desaparece">
+                <h6 class="informacion">Solo letras minúsculas y sin acentos 
+                    ni caracteres especiales</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    ENCRIPTAR
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    DESENCRIPTAR
+                </button>
+            </div>
+        </section>        
+        <section id="Mensajes">
+            <textarea class="mensajes" cols="18" rows="8"> </textarea>
+           
+            <button class="copiar" onclick="copiar()">COPIAR</button>
+        </section>        
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer> Challenguer Alura 2022 - Ariel Maradei
